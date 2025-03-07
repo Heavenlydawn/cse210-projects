@@ -8,8 +8,8 @@ class Program
         Console.Write("What is your grade percentage?. ");
         int gradeValue = int.Parse(Console.ReadLine());
 
-        string gradeLetter = " ";
-        string letterSign = " ";
+        string gradeLetter = "";
+        string letterSign = "";
 
         if (gradeValue >= 90)
         {
@@ -30,10 +30,12 @@ class Program
         else
         {
             gradeLetter = "F";
-        }   
+        }
 
         // Determining the Sign
         int lastDigit = gradeValue % 10;
+
+
         if (gradeLetter != "A" && gradeLetter != "F")
         {
             if (lastDigit >= 7)
@@ -50,8 +52,8 @@ class Program
             letterSign = "-";
         }
 
-        // Printing the final Grade
-        Console.WriteLine($"Your grade is: {gradeLetter} {letterSign}");
+        Console.WriteLine($"Your final grade is: {gradeLetter}{letterSign}");
+
 
         if (gradeValue >= 70)
         {
