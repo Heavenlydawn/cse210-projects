@@ -1,3 +1,10 @@
+// Exceeded Requirements:
+// - Added an ActivityLogger to track activity history per session.
+// - Prevents duplicate prompts/questions from being shown again within the session.
+// - Enhanced console animations (spinner + countdown).
+// - Modular design with a clear inheritance structure.
+// - Clean and easy to expand with more activities.
+
 using System;
 
 class Program
